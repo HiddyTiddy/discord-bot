@@ -1,0 +1,21 @@
+[package]
+name = "bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serenity = { version = "0.10", default-features = false, features = [
+    "client",
+    "gateway",
+    "rustls_backend",
+    "model",
+] }
+tokio = { version = "1.0", features = ["rt-multi-thread", "macros"] }
+log = "0.4.17"
+fern = "0.6.1"
+chrono = "0.4.19"
+sqlx = { version = "0.6.0", features = ["runtime-tokio-rustls", "sqlite", "macros", "chrono"] }
+dotenv = "0.15.0"
+nom = "7.1.1"
+rand = { version = "0.8.5", features = ["std_rng"] }
+tinyvec = "1.6.0"

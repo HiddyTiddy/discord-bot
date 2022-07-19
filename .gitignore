@@ -1,0 +1,10 @@
+/target
+
+src/vars.rs
+.bak
+test.db
+test.db-shm
+test.db-wal
+dev.db
+bot.log
+dump.sql
